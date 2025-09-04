@@ -10,6 +10,8 @@ A Telegram bot that converts YouTube video subtitles into interactive multiple-c
 - **Real-time Feedback**: Immediate response with explanations
 - **Score Tracking**: Complete summary with detailed breakdown
 
+![Screenshot](docs/screenshot.png)
+
 ## 🏗️ Architecture
 
 ```
