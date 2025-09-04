@@ -1,0 +1,38 @@
+[project]
+name = "youtube_quiz_bot"
+version = "0.1.0"
+description = "Telegram bot that turns YouTube subtitles into quizzes."
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot>=20.9",
+    "yt-dlp>=2024.7.15",
+    "python-dotenv>=1.0.1",
+    "openai>=1.30.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
